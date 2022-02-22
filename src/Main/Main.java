@@ -16,16 +16,16 @@ public class Main {
 		session.beginTransaction();
 //		CrearTablas.crearTablas(session);	
 //		VerMenu.menuPrincipal(session);	
-		System.out.println("--------------------------");
-		Consultar.verPeliculas(session);
-		System.out.println("--------------------------");
-		Consultar.verPelicula(session);
-		System.out.println("--------------------------");
+//		System.out.println("--------------------------");
+//		Consultar.verPeliculas(session);
+//		System.out.println("--------------------------");
+//		Consultar.verPelicula(session);
+//		System.out.println("--------------------------");
 		Consultar.peliculasActor(session);
-		System.out.println("--------------------------");
-		Consultar.peliculasDirector(session);
-		System.out.println("--------------------------");
-		Consultar.actoresPelicula(session);
+//		System.out.println("--------------------------");
+//		Consultar.peliculasDirector(session);
+//		System.out.println("--------------------------");
+//		Consultar.actoresPelicula(session);
 		session.close();
 		Mensajes.sesionTerminada();
 

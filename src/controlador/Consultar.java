@@ -7,28 +7,17 @@ import org.hibernate.Session;
 import modelo.Actor;
 import modelo.Director;
 import modelo.Pelicula;
-import vista.Mensajes;
 
 public class Consultar {
 
 //Ver una pelicula
 	public static void verPelicula(Session session) {
-		int codigo=1;
-		String c="select i from Pelicula i";
-		List<Pelicula> peliculas=session.createQuery(c).list();
-		
-		if (peliculas.isEmpty()) {
-			System.out.println("Todavía no se han añadido películas");
-	
-		}		
-		boolean flag=true;
-		for (Pelicula i : peliculas) {
-			if (i.getIdPelicula()==codigo) {
-				System.out.println(i.toString());
-				flag=false;
-			}
-		}
-		if (flag) {
+		int codigo=9;
+		String c="select i from Pelicula i where idPelicula='"+codigo+"'";
+		Pelicula pelicula=(Pelicula) session.createQuery(c).uniqueResult();		
+		if(pelicula!=null) {
+			System.out.println(pelicula.toString());
+		}else {
 			System.out.println("No se ha encontrado la película");
 		}
 	}
@@ -52,21 +41,14 @@ public class Consultar {
 		
 	public static void peliculasActor(Session session) {
 		String dniActor="1";
-		String c = "select i from Actor i";
-		List<Actor> actores = session.createQuery(c).list();
-		if (actores.isEmpty()) {
-			System.out.println("sin actores");
+		String c = "select i from Actor i where dniActor='"+dniActor+"'";
+		Actor actor = (Actor) session.createQuery(c).uniqueResult();		
+		if(actor!=null) {
+			System.out.println(actor.getPeliculas().toString());
+		}else {
+			System.out.println("No se ha encontrado ningún actor con ese dni");
 		}
-		boolean flag = true;
-		for (Actor i : actores) {
-			if (i.getDniActor().equalsIgnoreCase(dniActor)) {
-				System.out.println(i.getPeliculas().toString());
-				flag = false;
-			}
-		}
-		if (flag) {
-			System.out.println("actor no encontrado");
-		}
+			
 	}
 	
 
@@ -75,23 +57,18 @@ public class Consultar {
 	
 	public static void actoresPelicula(Session session) {
 		int codigo=1;
-		String c="select i from Pelicula i";
-		List<Pelicula> peliculas=session.createQuery(c).list();
-		boolean flag = true;
-		for (Pelicula i : peliculas) {
-			if (i.getIdPelicula()==codigo) {
-				System.out.println(i.getActores().toString());
-				flag = false;
-			}
-		}
-		if (flag) {
-			System.out.println("pelicula no encontrada");
+		String c="select i from Pelicula i where idPelicula='"+codigo+"'";
+		Pelicula pelicula = (Pelicula) session.createQuery(c).uniqueResult();	
+		if(pelicula!=null) {
+			System.out.println(pelicula.getActores().toString());
+		}else {
+			System.out.println("No se ha encontrado ninguna película con ese código");
 		}
 		
 	}
 	
 	
-//Ver las películas de un director
+//Ver las películas de un director, alternativa poco eficiente
 	
 	public static void peliculasDirector(Session session) {
 		String dniDirector="1";
@@ -112,7 +89,20 @@ public class Consultar {
 		}
 	}
 	
+	//Ver teléfono de un director
 	
+	public static void telefonoDirector(Session session) {
+		String dniDirector="1";
+		String c = "select i from Director i where dniDirector="+dniDirector+"'";
+		Director director = (Director) session.createQuery(c).uniqueResult();
+		
+		if(director!=null) {
+			System.out.println(director.getTelefono().toString());
+		}else {
+			System.out.println("Director no encontrado");
+		}
+		
+	}
 	
 	
 	
