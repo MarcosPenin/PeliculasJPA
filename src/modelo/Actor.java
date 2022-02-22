@@ -20,6 +20,18 @@ public class Actor {
 	@JoinTable(name="actor_pelicula", joinColumns={@JoinColumn(name="dniActor")}, inverseJoinColumns={@JoinColumn(name="idPelicula")})
 	private Set<Pelicula> peliculas = new HashSet<>();
 	
+	public Actor() {}
+	
+	public Actor(String dniActor, String nombre, String apellidos) {
+		super();
+		this.dniActor = dniActor;
+		this.nombre = nombre;
+		this.apellidos = apellidos;
+	}
+	
+	
+	
+	
 	public void addPelicula(Pelicula pelicula) {
 		peliculas.add(pelicula);
 	}
@@ -74,11 +86,8 @@ public class Actor {
 
 
 
-	public Actor(String dniActor, String nombre, String apellidos) {
-		super();
-		this.dniActor = dniActor;
-		this.nombre = nombre;
-		this.apellidos = apellidos;
+	public String toString() {
+		return nombre+apellidos;
 	}
 
 

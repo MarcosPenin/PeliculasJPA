@@ -10,6 +10,8 @@ public class Telefono {
 	private String telefono;
 
 
+	public Telefono() {}
+	
 	public Telefono(String telefono) {
 		this.telefono=telefono;
 	}

@@ -27,14 +27,13 @@ public class CrearTablas {
 		Director d3=new Director("3","director","tercero");
 		Director d4=new Director("4","director","cuarto");
 		
-		
+		p1.addActor(a1);
 		a1.addPelicula(p1);
 		a1.addPelicula(p2);
 		a1.addPelicula(p3);
 		d1.addPelicula(p1);
 		d2.addPelicula(p3);
-		
-		
+				
 		session.save(a1);
 		session.save(a2);
 		session.save(d1);

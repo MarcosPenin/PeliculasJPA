@@ -25,10 +25,16 @@ public class Pelicula {
 	@JoinColumn(name="dniDirector")
 	private Director director;
 
+	
+	public Pelicula(){}
+	
 	public Pelicula(String titulo, String ano) {
 		this.titulo = titulo;
 		this.ano = ano;
 	}
+	
+	
+	
 	
 	public void addActor(Actor actor) {
 		actores.add(actor);
@@ -76,7 +82,10 @@ public class Pelicula {
 	}
 	 
  
-    
+	public String toString() {
+		return titulo;
+	}
+
 	
 
 	

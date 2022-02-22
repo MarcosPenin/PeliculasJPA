@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7d13a23c-72b8-449b-9772-effc0d353025" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/.classpath" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Main/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/controlador/Borrar.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/controlador/Borrar.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/controlador/Consultar.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/controlador/Consultar.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/controlador/CrearTablas.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/controlador/CrearTablas.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/controlador/Insertar.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/controlador/Insertar.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/modelo/Actor.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/modelo/Actor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/modelo/Director.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/modelo/Director.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/modelo/Pelicula.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/modelo/Pelicula.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/modelo/Telefono.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/modelo/Telefono.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/vista/Mensajes.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/vista/Mensajes.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controlador/Borrar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controlador/Borrar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controlador/Consultar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controlador/Consultar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controlador/CrearTablas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controlador/CrearTablas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controlador/Insertar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controlador/Insertar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modelo/Actor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modelo/Actor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modelo/Director.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modelo/Director.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modelo/Pelicula.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modelo/Pelicula.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modelo/Telefono.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modelo/Telefono.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vista/BorrarVista.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vista/ConsultarVista.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vista/InsertarVista.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vista/Mensajes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/vista/Mensajes.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="25TfTLONyl6oFyP37U5fRkY82kb" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7d13a23c-72b8-449b-9772-effc0d353025" name="Changes" comment="" />
+      <created>1645556004765</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1645556004765</updated>
+    </task>
+    <servers />
+  </component>
+</project>

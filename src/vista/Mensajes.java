@@ -40,4 +40,29 @@ public class Mensajes {
 		
 	}
 
+	public static void actorNoEncontrado() {
+		System.out.println("No existe ningún actor con ese dni");
+		
+	}
+
+	public static void peliculaNoEncontrada() {
+		System.out.println("No existe ninguna película con ese código");
+		
+	}
+
+	public static void directorNoEncontrado() {
+		System.out.println("No existe ningún director con ese dni");
+		
+	}
+
+	public static void sinPeliculas() {
+		System.out.println("Todavía no se ha añadido ninguna película;");
+		
+	}
+
+	public static void sinActores() {
+		System.out.println("Todavía no se ha registrado ningún actor");
+		
+	}
+
 }

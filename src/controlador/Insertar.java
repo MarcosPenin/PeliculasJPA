@@ -22,11 +22,15 @@ public class Insertar {
 
 	}
 	public static void insertarActor(Session session) {
-		Actor actor = new Actor("x","xxxx","x");
+		Actor actor = new Actor("z","z","z");
 		session.save(actor);
 		session.getTransaction().commit();
 
 	}
+	
+	
+	
+	
 	
 	
 
